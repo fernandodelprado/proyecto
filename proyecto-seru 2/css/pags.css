@@ -1,0 +1,40 @@
+
+p {
+  font-weight: 300; 
+  line-height: 26px;
+}
+
+h1 { 
+  font-weight: 500; 
+  text-transform: uppercase;
+}
+
+h2 { 
+  font-weight: 500; 
+  text-transform: uppercase;
+}
+.titulo-historia { 
+  font-weight: 500;   
+}
+
+b { 
+  font-weight: 700; 
+  color: #b1616a;}
+  
+i { 
+  font-weight: 500; 
+}
+
+li {
+    font-weight: 300;
+  }
+
+.tapas {
+	width: 250px;
+}
+
+table {
+	text-align: center;
+  width: 100%;
+
+}
