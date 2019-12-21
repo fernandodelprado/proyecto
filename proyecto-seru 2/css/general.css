@@ -1,10 +1,13 @@
 header {
 	display: flex;
 	align-items: center;
-
 	width: 100%;
 	overflow: auto;
 	background: #e8d6d2;
+}
+
+.imagen-fondo{
+	background: url(imagenes/headerback.jpg);
 }
 
 nav {
@@ -22,6 +25,27 @@ nav ul li {
 	list-style: none;
 	padding-right: 20px;
 }
+
+@keyframes un_efecto{
+       0%{ width: 0px; }
+       25%{ width: 900px; }
+       50%{ width: 200px; background-color: #f0eded; }
+       75%{ width: 1200px;}
+       100%{ width: 100px;
+       background-color:#f0eded;}
+} /*esta llave cierra el un_efecto */
+
+.barra-transicion{
+ width: 0px;
+ height: 100px;
+ background-color: #f0eded;
+ animation-name: un_efecto;
+ animation-iteration-count: infinite;
+ animation-timing-function: ease-in;
+ animation-duration: 20s;
+ animation-delay: 1s;
+}
+
 .menu-flex{
 	width: 100%;
 	display: flex;
@@ -30,6 +54,11 @@ nav ul li {
 	align-items: right;
 	flex-wrap: wrap;
 
+}
+
+.img-flip:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 form {
@@ -43,6 +72,7 @@ body {
 
 	background: #f0eded; 
 }
+
 
 .logo {
 	margin-left: 20px;
@@ -58,6 +88,7 @@ body {
 	flex-wrap: wrap;
 	flex-basis: 25%;
 	text-align: center;
+
 }
 
 .integrantes-div {
@@ -185,6 +216,7 @@ footer {
 	background-color: #b1616a; 
 	color: white;
 	padding: 50px;
+
 }
 
 @media only screen and (min-width: 320px) {
@@ -200,11 +232,13 @@ footer {
 }
 
 }
+
 .imagen:hover {
 -webkit-transform: rotateY(180deg);
 -webkit-transform-style: preserve-3d;
 transform: rotateY(180deg);
-transform-style: preserve-3d;}
+transform-style: preserve-3d;
+}
 
 .contenedor {overflow:hidden;}
 .contenedor:hover .imagen {-webkit-transform:scale(1.3);transform:scale(1.3);}
