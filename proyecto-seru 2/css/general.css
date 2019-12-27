@@ -3,7 +3,9 @@ header {
 	align-items: center;
 	width: 100%;
 	overflow: auto;
-	background: #e8d6d2;
+	background: url(../imagenes/headerback.jpg);
+	background-size: cover;
+
 }
 
 .imagen-fondo{
@@ -73,6 +75,9 @@ body {
 	background: #f0eded; 
 }
 
+.tapa {
+	padding: 35px;
+}
 
 .logo {
 	margin-left: 20px;
@@ -219,7 +224,54 @@ footer {
 
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 600px) {
+
+	.item-historia{
+	display: flex;
+	padding: 10px 10px 20px 20px;
+	
+	flex-wrap: wrap;
+
+}
+div#portada {
+
+	
+	width:100%;
+	height:auto;
+	background:url(imagenes/entrada.jpg) center center;
+}
+
+
+
+}
+
+.menu-flex{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 10px; 
+	align-items: right;
+	flex-wrap: wrap;
+
+}
+
+nav {
+	margin-top: 30px;
+ 
+	text-align: right;
+	display: flex;
+	flex-basis: 70%;
+	flex-wrap: wrap;
+}
+
+nav ul li {
+	display: inline-block; 
+	position: relative;
+	list-style: none;
+	padding-right: 20px;
+}
+
+
 	
 }
 
@@ -246,6 +298,195 @@ transform-style: preserve-3d;
 .opacidad:hover {filter: grayscale(.8);}
 
 .opacidad2:hover {filter: opacity(.7);}
+
+div#tapa01 {
+	background-image: url(imagenes/tapa01-seru-giran-1978.png);
+	display: flex;
+	direction: row;
+	justify-content: center;
+	width: 100%;
+	flex-wrap: wrap;
+	flex-basis: 25%;
+	text-align: center;
+
+}
+
+
+
+
+/* Comienzo seccion tapas */
+
+h4#titulos {
+  font-weight: 400; 
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 200px;
+  padding-top: 20px;
+}
+
+.contenedor-tapas {
+	display: flex;
+	justify-content: center;
+	direction: row;
+	width: 100%;
+	flex-wrap: wrap;
+	flex-basis: 25%;
+	text-align: center;
+
+}
+
+div#tapa1 {
+	margin-right: 15px;
+	margin-bottom: 15px;
+	display: flex;
+	direction: row;
+	width: 300px;
+	height: 300px; 
+	background-image: url(../imagenes/tapa01-seru-giran-1978.png);
+	text-align: center;
+
+}
+
+div#tapa2 {
+	margin-right: 15px;
+	margin-bottom: 15px;
+	display: flex;
+	direction: row;
+	width: 300px;
+	height: 300px; 
+	background-image: url(../imagenes/tapa02-grasa-capitales-1979.png);
+	text-align: center;
+
+}
+
+div#tapa3 {
+	margin-right: 15px;
+	margin-bottom: 15px;
+	display: flex;
+	direction: row;
+	width: 300px;
+	height: 300px; 
+	background-image: url(../imagenes/tapa03-bicicleta-1980.png);
+	text-align: center;
+
+}
+
+div#tapa4 {
+	margin-right: 15px;
+	margin-bottom: 15px;
+	display: flex;
+	direction: row;
+	width: 300px;
+	height: 300px; 
+	background-image: url(../imagenes/tapa04-peperina-1981.png);
+	text-align: center;
+
+}
+
+div#tapa5 {
+	margin-right: 15px;
+	margin-bottom: 15px;
+	display: flex;
+	direction: row;
+	width: 300px;
+	height: 300px; 
+	background-image: url(../imagenes/tapa05-seru92-1992.png);
+	text-align: center;
+
+}
+
+div#tapa6 {
+	margin-right: 15px;
+	margin-bottom: 15px;
+	display: flex;
+	direction: row;
+	width: 300px;
+	height: 300px; 
+	background-image: url(../imagenes/tapa06-no-llores-por-mi-1982-VIVO.png);
+	text-align: center;
+
+}
+
+div#tapa7 {
+	margin-right: 15px;
+	margin-bottom: 15px;
+	display: flex;
+	direction: row;
+	width: 300px;
+	height: 300px; 
+	background-image: url(../imagenes/tapa07-en-vivo-I-II-1993-VIVO.png);
+	text-align: center;
+
+}
+
+div#tapa8 {
+	margin-right: 15px;
+	margin-bottom: 15px;
+	display: flex;
+	direction: row;
+	width: 300px;
+	height: 300px; 
+	background-image: url(../imagenes/tapa08-yo-no-quiero-volverme-tan-loco-2000-VIVO.png);
+	text-align: center;
+
+}
+
+
+
+div#info {
+	
+	width: 300px;
+	height: 300px; 
+	background-image: url(../imagenes/cover-spotify.png);
+	visibility: hidden;
+	text-align: center;
+
+}
+ 
+div#tapa1:hover div#info {
+	visibility: visible;
+
+}
+
+div#tapa2:hover div#info {
+	visibility: visible;
+
+}
+
+div#tapa3:hover div#info {
+	visibility: visible;
+
+}
+
+div#tapa4:hover div#info {
+	visibility: visible;
+
+}
+
+div#tapa5:hover div#info {
+	visibility: visible;
+
+}
+
+div#tapa6:hover div#info {
+	visibility: visible;
+
+}
+
+div#tapa7:hover div#info {
+	visibility: visible;
+
+}
+
+div#tapa8:hover div#info {
+	visibility: visible;
+
+}
+
+titulos-discos
+
+/* Final seccion tapas */
 
 @-webkit-keyframes swing
 {
