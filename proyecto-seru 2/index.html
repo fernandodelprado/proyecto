@@ -9,6 +9,11 @@
 	<link rel="stylesheet" href="css/general.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<style>
+    img {
+      max-width : 100%;
+    }
+    </style>
 
 </head>
 <body>
@@ -34,9 +39,11 @@
 	
 		</header>
 
-		<div id="portada">
-		<img class="opacidad" src="imagenes/Serugiran-back5.jpg" alt="Foto Portada Serú Back" width=100%>
-		</div>
+	<picture>
+    	<source srcset="imagenes/serugiran-back5.jpg" media="(min-width:600px)">
+    	<source srcset="imagenes/charly.jpg" media="(max-width:500px)">
+    	<img src="imagenes/serugiran-back5.jpg" alt="Seru fondo">
+  	</picture>
 
 <footer>
 	
