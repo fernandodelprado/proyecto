@@ -1,32 +1,40 @@
 header {
-	display: flex;
-	align-items: center;
-	width: 100%;
-	overflow: auto;
+
+
+
 	background: url(../imagenes/headerback.jpg);
 	background-size: cover;
+	padding-bottom: 30px;
+	padding-top: 30px;
+
 
 }
+
+header h1 {
+width: 80%;
+}
+
+
+nav {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    -ms-flex-align: center;
+    align-items: center;
+   
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+
 
 .imagen-fondo{
 	background: url(imagenes/headerback.jpg);
 }
 
-nav {
-	margin-top: 30px;
- 
-	text-align: right;
-	display: flex;
-	flex-basis: 70%;
-	flex-wrap: wrap;
-}
 
-nav ul li {
-	display: inline-block; 
-	position: relative;
-	list-style: none;
-	padding-right: 20px;
-}
 
 @keyframes un_efecto{
        0%{ width: 0px; }
@@ -48,25 +56,13 @@ nav ul li {
  animation-delay: 1s;
 }
 
-.menu-flex{
-	width: 100%;
-	display: flex;
-	justify-content: flex-end;
-	padding-right: 50px; 
-	align-items: right;
-	flex-wrap: wrap;
-
-}
 
 .img-flip:hover {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 
-form {
-	width: 100%;
-	padding: 10px 70px 30px 30px;
-}
+
 
 body {
 	margin: 0;
@@ -101,6 +97,7 @@ body {
 		flex-grow: 1;
 		width: 100%;  
 		background: #f0eded;
+		padding: 5px;
 
 }
 
@@ -185,13 +182,45 @@ body {
 	text-align: center;
 }
 
+form {
+	padding-top: 30px;
+	padding-bottom: 100px;
+}
+
+
+
+.btn-primary {
+	background: #b1616a;
+}
+
 
 
 h1 { 
   	font-weight: 700; 
   	text-transform: uppercase;
-  	display: inline-block;
-  
+
+}
+
+h5 { 
+  font-weight: 500; 
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  text-transform: uppercase;
+  color: #b1616a;
+
+}
+
+
+
+.h5-historia { 
+  font-weight: 500; 
+  padding-left: 0px;
+  padding-right: 30px;
+  padding-top: 20px;
+  text-transform: uppercase;
+  color: #b1616a;
+
 }
 
 
@@ -199,19 +228,20 @@ h1 {
 a:link{
 	color: #b1616a;
 	text-decoration: none;
-  	font-weight: 500;
+  	font-weight: 600;
 }
 
 a:visited{
 	color:#b1616a;
 	text-decoration: none;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 a:hover { color: #97444d; 
-	font-weight: bold }
+	font-weight: 600; }
 
-a:active { color: #d89ca3; }
+a:active { color: #d89ca3; 
+	font-weight: 600;}
 
 footer {
 	display: flex;
@@ -241,6 +271,9 @@ div#portada {
 	background:url(imagenes/entrada.jpg) center center;
 }
 
+header h1 {
+width: 100%;
+}
 
 
 }
@@ -255,25 +288,11 @@ div#portada {
 
 }
 
-nav {
-	margin-top: 30px;
- 
-	text-align: right;
-	display: flex;
-	flex-basis: 70%;
-	flex-wrap: wrap;
-}
 
-nav ul li {
-	display: inline-block; 
-	position: relative;
-	list-style: none;
-	padding-right: 20px;
-}
 
 
 	
-}
+
 
 @media only screen and (min-width: 768px) {
 	

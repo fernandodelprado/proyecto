@@ -5,62 +5,142 @@
 	<link rel="icon" type="image/png" href="imagenes/serufavicon4.png" />
 	<title>Contacto</title>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+
+		    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+
 		<link rel="stylesheet" href="css/general.css"/>
 	<link rel="stylesheet" type="text/css" href="css/pags.css">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	
 </head>
 <body>
 
-	<header>
-		<h1 class="swing">
-			<a href="index.html">
-		<img class="logo" src="imagenes/Seru-Logo-negro2.png" alt="Serú Girán Logo">
-		</a>
-	</h1>
-		<nav>
+<header class="container-fluid ">
 
-			<ul class="menu-flex">
-				<li> <a href="index.html">Home</a> </li>
-				<li> <a href="integrantes.html">Integrantes</a> </li>
-				<li> <a href="historia.html">Historia</a> </li>
-				<li> <a href="discografia.html">Discografia</a> </li>
-				<li> <a href="multimedia.html">Multimedia</a> </li>
-				<li> <a href="contacto.html">Contacto</a> </li>
+  <div class="row align-items-center">
+      <div class="col-5">
 
-			</ul> 
-		</nav> 
-	
-		</header>
+          <h1 class="swing">
+      <a href="index.html">
+    <img class="logo" src="imagenes/Seru-Logo-negro2.png" alt="Serú Girán Logo">
+    </a>
+    </h1>
+  
+    </div>
 
-<div class="item-form">
-			<form> 
-		<fieldset>
-			<div>Sexo: <br>
-			<label for="sexo">Hombre</label>
-				<input type="radio" name="sexo" value="hombre"/>
-	    	<label for="sexo">Mujer</label>
-	    		<input type="radio" name="sexo" value="mujer"/> </div> <br>
-	    	<label for="nombre">Nombre:</label> <br>
-	    		<input type="text" name="nombre" placeholder="Nombre"> <br> <br>
-	    	<label for="apellido">Apellido:</label> <br>
-	    		<input type="text" name="apellido" placeholder="Apellido"> <br> <br>
-	    	<label for="mail">Mail:</label> <br>
-	    		<input type="email" name="mail" placeholder="usuario@servidor.com"> <br> <br>
-	    	<label for="seleccione">Recibir info de:</label>
-		    	<select name="seleccione">
-		    		<option value="seleccionar">(Seleccionar uno)</option>
-		    		<option value="Discos">Discos</option>
-		    		<option value="Noticias">Noticias</option> 
-		    		<option value="Canciones">Canciones</option>
-		    		<option value="Otro">Otro</option>
-		    <input type="text" placeholder="Escribe aqui..."> <br> <br>
-		    <input type="submit" value="Enviar">
-		    <input type="reset" name="Restablecer">
-	    	<legend>Estamos en contacto!</legend>
-	    </fieldset>
-	</form>
-	</div>
+    <div class="col-7">
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+ 
+     <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="integrantes.html">Integrantes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="historia.html">Historia</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="discografia.html">Discografía</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="multimedia.html">Multimedia</a>
+      </li>
+      <!-- Dropdown -->
+<li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Contacto
+      </a>
+      <div class="dropdown-menu">
+    <a class="dropdown-item" href="contacto.html">Form</a>
+    <a target="blank" class="dropdown-item" href="https://www.fernandodelprado.com">Facebook</a>
+    <a target="blank" class="dropdown-item" href="https://www.instagram.com/delpradoarte">Instagram</a>
+    <div class="dropdown-divider"></div>
+    <a target="blank" class="dropdown-item" href="mailto:fdelprado@fibertel.com.ar">Mail</a>
+  </div>
+    </li>
+ 
+      </ul>
+      </div>
+  
+    </nav>
+      
+
+    </div>
+
+  </div>
+
+
+
+</header>
+
+<h5>NOS VEREMOS OTRA VEZ...</h5>
+<br>
+
+<div class="container">
+
+ 
+  <form>
+
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationDefault01">First name</label>
+      <input type="text" class="form-control" id="validationDefault01" value="Nombre" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationDefault02">Last name</label>
+      <input type="text" class="form-control" id="validationDefault02" value="Apellido" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationDefaultUsername">Username</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend2">@</span>
+        </div>
+        <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault03">City</label>
+      <input type="text" class="form-control" id="validationDefault03" required>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationDefault04">State</label>
+      <select class="custom-select" id="validationDefault04" required>
+        <option selected disabled value="">Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationDefault05">Zip</label>
+      <input type="text" class="form-control" id="validationDefault05" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+      <label class="form-check-label" for="invalidCheck2">
+        Agree to terms and conditions
+      </label>
+    </div>
+  </div>
+  <button class="btn btn-danger" type="submit">Submit form</button>
+</form>
+</div>
 
 	<footer>
 	
@@ -72,6 +152,11 @@
 	 © Derechos Reservados 2020 delPra 
 	</div> 
 </footer>
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 </html>
