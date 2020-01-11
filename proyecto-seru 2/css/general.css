@@ -24,7 +24,7 @@ nav {
     flex-direction: row-reverse;
     -ms-flex-align: center;
     align-items: center;
-   
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: .5rem 1rem;
 }
@@ -228,20 +228,20 @@ h5 {
 a:link{
 	color: #b1616a;
 	text-decoration: none;
-  	font-weight: 600;
+  	font-weight: 500;
 }
 
 a:visited{
 	color:#b1616a;
 	text-decoration: none;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 a:hover { color: #97444d; 
-	font-weight: 600; }
+	}
 
 a:active { color: #d89ca3; 
-	font-weight: 600;}
+	}
 
 footer {
 	display: flex;
