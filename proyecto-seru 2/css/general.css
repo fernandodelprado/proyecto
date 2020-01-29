@@ -29,6 +29,10 @@ nav {
     padding: .5rem 1rem;
 }
 
+.download {
+	padding-bottom: 35px;
+}
+
 
 .imagen-fondo{
 	background: url(imagenes/headerback.jpg);
